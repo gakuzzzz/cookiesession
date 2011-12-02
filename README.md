@@ -13,7 +13,7 @@ This is a servlet filter that emulate the cookie session store of Ruby on Rails.
 - **Security**
     - Since the cookie value is encrypted, the session can contains a sensitive data.
 
-# Restriction
+# Restrictions
 
 - You cannot use methods about Session ID.
     - Because Session ID does not exist.
@@ -160,13 +160,13 @@ Add a `filter` and a `filter-mapping` element into your `web.xml`
 
 # Experiment
 
-1.  Use Maven to launch the sample web application:
+1.  Use Maven to launch the sample web application.
 
     ```
     $ mvn jetty:run
     ```
 
-1.  Now open next URL in a browser
+1.  Now open next URL in a browser.
 
     ```
     http://localhost:8080/cookiesession/index.jsp
@@ -174,7 +174,7 @@ Add a `filter` and a `filter-mapping` element into your `web.xml`
 
 1.  When you reload, the numerical value in this page increases.
 1.  You can see the cookie value in a browser.
-1.  After delete the cookie, the numerical value is 0.
+1.  After delete the cookie and reload, the numerical value is 0.
 
 # License
 
