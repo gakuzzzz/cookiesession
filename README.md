@@ -28,6 +28,13 @@ This is a servlet filter that emulate the cookie session store of Ruby on Rails.
     - When you save unserializable objects at a session, you should make it serializable by using `HttpSessionActivationListener` etc.
     - But this is the same as using session replication. 
 
+# Dependencies
+
+- JavaSE 5.0 or grater
+- ServletAPI 2.5 or grater
+- Apache Commons Codec 1.4 or grater
+- Apache Commons Logging 1.1 or grater
+
 # How to use
 
 Add a `filter` and a `filter-mapping` element into your `web.xml`
